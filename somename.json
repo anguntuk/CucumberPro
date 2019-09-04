@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-07-22T09:09:06.161Z",
+        "start_timestamp": "2019-09-04T04:46:06.206Z",
         "line": 3,
         "name": "Success",
         "description": "",
@@ -13,11 +13,11 @@
         "steps": [
           {
             "result": {
-              "duration": 886300,
+              "duration": 747100,
               "status": "passed"
             },
             "line": 4,
-            "name": "User enters username",
+            "name": "User in home page",
             "match": {
               "location": "LoginStep.user_enters_username()"
             },
@@ -25,22 +25,39 @@
           },
           {
             "result": {
-              "duration": 126700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 5,
-            "name": "User enters password",
-            "match": {
-              "location": "LoginStep.user_enters_password()"
-            },
+            "name": "User enters credentials",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "sam",
+                  "hgins"
+                ]
+              },
+              {
+                "cells": [
+                  "ram",
+                  "atis"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 60600,
-              "status": "passed"
+              "duration": 14700,
+              "status": "skipped"
             },
-            "line": 6,
+            "line": 9,
             "name": "Click on login button",
             "match": {
               "location": "LoginStep.click_on_login_button()"
@@ -49,10 +66,10 @@
           },
           {
             "result": {
-              "duration": 55100,
-              "status": "passed"
+              "duration": 10200,
+              "status": "skipped"
             },
-            "line": 7,
+            "line": 10,
             "name": "Home page is displayed",
             "match": {
               "location": "LoginStep.home_page_is_displayed()"
